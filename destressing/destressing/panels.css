@@ -1,0 +1,891 @@
+body {
+    background: #000;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 800px;
+  }
+  
+  .panels {
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    height: 400px;
+    -webkit-animation: panelsRotate 30000ms linear infinite;
+            animation: panelsRotate 30000ms linear infinite;
+    transform-style: preserve-3d;
+  }
+  .panels .panel {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    background: #fff;
+    box-sizing: border-box;
+    transform-style: preserve-3d;
+    box-shadow: 10px 0 100px rgba(0, 0, 0, 0.1) inset;
+  }
+  .panels .panel::after {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform: translateZ(-2px);
+    box-sizing: border-box;
+  }
+  .panels .panel:nth-child(1) {
+    -webkit-animation: wing 5000ms 0ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 0ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% 0%;
+  }
+  .panels .panel:nth-child(1)::after {
+    background: #b2e4e8;
+  }
+  .panels .panel:nth-child(2) {
+    -webkit-animation: wing 5000ms 100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -11%;
+  }
+  .panels .panel:nth-child(2)::after {
+    background: #b6c5d6;
+  }
+  .panels .panel:nth-child(3) {
+    -webkit-animation: wing 5000ms 200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -22%;
+  }
+  .panels .panel:nth-child(3)::after {
+    background: #cbe07b;
+  }
+  .panels .panel:nth-child(4) {
+    -webkit-animation: wing 5000ms 300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -33%;
+  }
+  .panels .panel:nth-child(4)::after {
+    background: #b0ae70;
+  }
+  .panels .panel:nth-child(5) {
+    -webkit-animation: wing 5000ms 400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -44%;
+  }
+  .panels .panel:nth-child(5)::after {
+    background: #7588a1;
+  }
+  .panels .panel:nth-child(6) {
+    -webkit-animation: wing 5000ms 500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -55%;
+  }
+  .panels .panel:nth-child(6)::after {
+    background: #b3c971;
+  }
+  .panels .panel:nth-child(7) {
+    -webkit-animation: wing 5000ms 600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -66%;
+  }
+  .panels .panel:nth-child(7)::after {
+    background: #74c3ba;
+  }
+  .panels .panel:nth-child(8) {
+    -webkit-animation: wing 5000ms 700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -77%;
+  }
+  .panels .panel:nth-child(8)::after {
+    background: #66d3a0;
+  }
+  .panels .panel:nth-child(9) {
+    -webkit-animation: wing 5000ms 800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -88%;
+  }
+  .panels .panel:nth-child(9)::after {
+    background: #836ae2;
+  }
+  .panels .panel:nth-child(10) {
+    -webkit-animation: wing 5000ms 900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -99%;
+  }
+  .panels .panel:nth-child(10)::after {
+    background: #d89b7c;
+  }
+  .panels .panel:nth-child(11) {
+    -webkit-animation: wing 5000ms 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 1000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -110%;
+  }
+  .panels .panel:nth-child(11)::after {
+    background: #6bcab6;
+  }
+  .panels .panel:nth-child(12) {
+    -webkit-animation: wing 5000ms 1100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 1100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -121%;
+  }
+  .panels .panel:nth-child(12)::after {
+    background: #97e876;
+  }
+  .panels .panel:nth-child(13) {
+    -webkit-animation: wing 5000ms 1200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 1200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -132%;
+  }
+  .panels .panel:nth-child(13)::after {
+    background: #fa67b2;
+  }
+  .panels .panel:nth-child(14) {
+    -webkit-animation: wing 5000ms 1300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 1300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -143%;
+  }
+  .panels .panel:nth-child(14)::after {
+    background: #a1b6af;
+  }
+  .panels .panel:nth-child(15) {
+    -webkit-animation: wing 5000ms 1400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 1400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -154%;
+  }
+  .panels .panel:nth-child(15)::after {
+    background: #ffb6bc;
+  }
+  .panels .panel:nth-child(16) {
+    -webkit-animation: wing 5000ms 1500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 1500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -165%;
+  }
+  .panels .panel:nth-child(16)::after {
+    background: #9cacf5;
+  }
+  .panels .panel:nth-child(17) {
+    -webkit-animation: wing 5000ms 1600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 1600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -176%;
+  }
+  .panels .panel:nth-child(17)::after {
+    background: #7570d6;
+  }
+  .panels .panel:nth-child(18) {
+    -webkit-animation: wing 5000ms 1700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 1700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -187%;
+  }
+  .panels .panel:nth-child(18)::after {
+    background: #d8f07b;
+  }
+  .panels .panel:nth-child(19) {
+    -webkit-animation: wing 5000ms 1800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 1800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -198%;
+  }
+  .panels .panel:nth-child(19)::after {
+    background: #97f3c9;
+  }
+  .panels .panel:nth-child(20) {
+    -webkit-animation: wing 5000ms 1900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 1900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -209%;
+  }
+  .panels .panel:nth-child(20)::after {
+    background: #8df5cc;
+  }
+  .panels .panel:nth-child(21) {
+    -webkit-animation: wing 5000ms 2000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 2000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -220%;
+  }
+  .panels .panel:nth-child(21)::after {
+    background: #96dc66;
+  }
+  .panels .panel:nth-child(22) {
+    -webkit-animation: wing 5000ms 2100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 2100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -231%;
+  }
+  .panels .panel:nth-child(22)::after {
+    background: #bfe8f8;
+  }
+  .panels .panel:nth-child(23) {
+    -webkit-animation: wing 5000ms 2200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 2200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -242%;
+  }
+  .panels .panel:nth-child(23)::after {
+    background: #7090c2;
+  }
+  .panels .panel:nth-child(24) {
+    -webkit-animation: wing 5000ms 2300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 2300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -253%;
+  }
+  .panels .panel:nth-child(24)::after {
+    background: #cf8374;
+  }
+  .panels .panel:nth-child(25) {
+    -webkit-animation: wing 5000ms 2400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 2400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -264%;
+  }
+  .panels .panel:nth-child(25)::after {
+    background: #c265f0;
+  }
+  .panels .panel:nth-child(26) {
+    -webkit-animation: wing 5000ms 2500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 2500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -275%;
+  }
+  .panels .panel:nth-child(26)::after {
+    background: #7af8d9;
+  }
+  .panels .panel:nth-child(27) {
+    -webkit-animation: wing 5000ms 2600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 2600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -286%;
+  }
+  .panels .panel:nth-child(27)::after {
+    background: #e7656a;
+  }
+  .panels .panel:nth-child(28) {
+    -webkit-animation: wing 5000ms 2700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 2700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -297%;
+  }
+  .panels .panel:nth-child(28)::after {
+    background: #e97982;
+  }
+  .panels .panel:nth-child(29) {
+    -webkit-animation: wing 5000ms 2800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 2800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -308%;
+  }
+  .panels .panel:nth-child(29)::after {
+    background: #87defe;
+  }
+  .panels .panel:nth-child(30) {
+    -webkit-animation: wing 5000ms 2900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 2900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -319%;
+  }
+  .panels .panel:nth-child(30)::after {
+    background: #6dd77c;
+  }
+  .panels .panel:nth-child(31) {
+    -webkit-animation: wing 5000ms 3000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 3000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -330%;
+  }
+  .panels .panel:nth-child(31)::after {
+    background: #7ce6b1;
+  }
+  .panels .panel:nth-child(32) {
+    -webkit-animation: wing 5000ms 3100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 3100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -341%;
+  }
+  .panels .panel:nth-child(32)::after {
+    background: #82b4e6;
+  }
+  .panels .panel:nth-child(33) {
+    -webkit-animation: wing 5000ms 3200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 3200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -352%;
+  }
+  .panels .panel:nth-child(33)::after {
+    background: #a4ffe5;
+  }
+  .panels .panel:nth-child(34) {
+    -webkit-animation: wing 5000ms 3300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 3300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -363%;
+  }
+  .panels .panel:nth-child(34)::after {
+    background: #a1a873;
+  }
+  .panels .panel:nth-child(35) {
+    -webkit-animation: wing 5000ms 3400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 3400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -374%;
+  }
+  .panels .panel:nth-child(35)::after {
+    background: #a6dc7b;
+  }
+  .panels .panel:nth-child(36) {
+    -webkit-animation: wing 5000ms 3500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 3500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -385%;
+  }
+  .panels .panel:nth-child(36)::after {
+    background: #81bef1;
+  }
+  .panels .panel:nth-child(37) {
+    -webkit-animation: wing 5000ms 3600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 3600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -396%;
+  }
+  .panels .panel:nth-child(37)::after {
+    background: #de7ec5;
+  }
+  .panels .panel:nth-child(38) {
+    -webkit-animation: wing 5000ms 3700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 3700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -407%;
+  }
+  .panels .panel:nth-child(38)::after {
+    background: #8fc2ed;
+  }
+  .panels .panel:nth-child(39) {
+    -webkit-animation: wing 5000ms 3800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 3800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -418%;
+  }
+  .panels .panel:nth-child(39)::after {
+    background: #e9f2e9;
+  }
+  .panels .panel:nth-child(40) {
+    -webkit-animation: wing 5000ms 3900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 3900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -429%;
+  }
+  .panels .panel:nth-child(40)::after {
+    background: #71e6ad;
+  }
+  .panels .panel:nth-child(41) {
+    -webkit-animation: wing 5000ms 4000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 4000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -440%;
+  }
+  .panels .panel:nth-child(41)::after {
+    background: #febaa1;
+  }
+  .panels .panel:nth-child(42) {
+    -webkit-animation: wing 5000ms 4100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 4100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -451%;
+  }
+  .panels .panel:nth-child(42)::after {
+    background: #ace286;
+  }
+  .panels .panel:nth-child(43) {
+    -webkit-animation: wing 5000ms 4200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 4200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -462%;
+  }
+  .panels .panel:nth-child(43)::after {
+    background: #cb9693;
+  }
+  .panels .panel:nth-child(44) {
+    -webkit-animation: wing 5000ms 4300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 4300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -473%;
+  }
+  .panels .panel:nth-child(44)::after {
+    background: #ec9185;
+  }
+  .panels .panel:nth-child(45) {
+    -webkit-animation: wing 5000ms 4400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 4400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -484%;
+  }
+  .panels .panel:nth-child(45)::after {
+    background: #aa7adb;
+  }
+  .panels .panel:nth-child(46) {
+    -webkit-animation: wing 5000ms 4500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 4500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -495%;
+  }
+  .panels .panel:nth-child(46)::after {
+    background: #c07ec8;
+  }
+  .panels .panel:nth-child(47) {
+    -webkit-animation: wing 5000ms 4600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 4600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -506%;
+  }
+  .panels .panel:nth-child(47)::after {
+    background: #8edc95;
+  }
+  .panels .panel:nth-child(48) {
+    -webkit-animation: wing 5000ms 4700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 4700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -517%;
+  }
+  .panels .panel:nth-child(48)::after {
+    background: #9ecd86;
+  }
+  .panels .panel:nth-child(49) {
+    -webkit-animation: wing 5000ms 4800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 4800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -528%;
+  }
+  .panels .panel:nth-child(49)::after {
+    background: #ef8bc4;
+  }
+  .panels .panel:nth-child(50) {
+    -webkit-animation: wing 5000ms 4900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 4900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -539%;
+  }
+  .panels .panel:nth-child(50)::after {
+    background: #f2d3c5;
+  }
+  .panels .panel:nth-child(51) {
+    -webkit-animation: wing 5000ms 5000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 5000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -550%;
+  }
+  .panels .panel:nth-child(51)::after {
+    background: #fcf08a;
+  }
+  .panels .panel:nth-child(52) {
+    -webkit-animation: wing 5000ms 5100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 5100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -561%;
+  }
+  .panels .panel:nth-child(52)::after {
+    background: #cdf570;
+  }
+  .panels .panel:nth-child(53) {
+    -webkit-animation: wing 5000ms 5200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 5200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -572%;
+  }
+  .panels .panel:nth-child(53)::after {
+    background: #cec5ba;
+  }
+  .panels .panel:nth-child(54) {
+    -webkit-animation: wing 5000ms 5300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 5300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -583%;
+  }
+  .panels .panel:nth-child(54)::after {
+    background: #66a0c7;
+  }
+  .panels .panel:nth-child(55) {
+    -webkit-animation: wing 5000ms 5400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 5400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -594%;
+  }
+  .panels .panel:nth-child(55)::after {
+    background: #85ddfb;
+  }
+  .panels .panel:nth-child(56) {
+    -webkit-animation: wing 5000ms 5500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 5500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -605%;
+  }
+  .panels .panel:nth-child(56)::after {
+    background: #faa3e9;
+  }
+  .panels .panel:nth-child(57) {
+    -webkit-animation: wing 5000ms 5600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 5600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -616%;
+  }
+  .panels .panel:nth-child(57)::after {
+    background: #95e4b3;
+  }
+  .panels .panel:nth-child(58) {
+    -webkit-animation: wing 5000ms 5700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 5700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -627%;
+  }
+  .panels .panel:nth-child(58)::after {
+    background: #c1818b;
+  }
+  .panels .panel:nth-child(59) {
+    -webkit-animation: wing 5000ms 5800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 5800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -638%;
+  }
+  .panels .panel:nth-child(59)::after {
+    background: #a38793;
+  }
+  .panels .panel:nth-child(60) {
+    -webkit-animation: wing 5000ms 5900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 5900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -649%;
+  }
+  .panels .panel:nth-child(60)::after {
+    background: #d370a7;
+  }
+  .panels .panel:nth-child(61) {
+    -webkit-animation: wing 5000ms 6000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 6000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -660%;
+  }
+  .panels .panel:nth-child(61)::after {
+    background: #ccb89c;
+  }
+  .panels .panel:nth-child(62) {
+    -webkit-animation: wing 5000ms 6100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 6100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -671%;
+  }
+  .panels .panel:nth-child(62)::after {
+    background: #8ea3f4;
+  }
+  .panels .panel:nth-child(63) {
+    -webkit-animation: wing 5000ms 6200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 6200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -682%;
+  }
+  .panels .panel:nth-child(63)::after {
+    background: #e17beb;
+  }
+  .panels .panel:nth-child(64) {
+    -webkit-animation: wing 5000ms 6300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 6300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -693%;
+  }
+  .panels .panel:nth-child(64)::after {
+    background: #e1bc75;
+  }
+  .panels .panel:nth-child(65) {
+    -webkit-animation: wing 5000ms 6400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 6400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -704%;
+  }
+  .panels .panel:nth-child(65)::after {
+    background: #93eeb8;
+  }
+  .panels .panel:nth-child(66) {
+    -webkit-animation: wing 5000ms 6500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 6500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -715%;
+  }
+  .panels .panel:nth-child(66)::after {
+    background: #c565b6;
+  }
+  .panels .panel:nth-child(67) {
+    -webkit-animation: wing 5000ms 6600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 6600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -726%;
+  }
+  .panels .panel:nth-child(67)::after {
+    background: #8feaa5;
+  }
+  .panels .panel:nth-child(68) {
+    -webkit-animation: wing 5000ms 6700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 6700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -737%;
+  }
+  .panels .panel:nth-child(68)::after {
+    background: #a086f8;
+  }
+  .panels .panel:nth-child(69) {
+    -webkit-animation: wing 5000ms 6800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 6800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -748%;
+  }
+  .panels .panel:nth-child(69)::after {
+    background: #83a5bb;
+  }
+  .panels .panel:nth-child(70) {
+    -webkit-animation: wing 5000ms 6900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 6900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -759%;
+  }
+  .panels .panel:nth-child(70)::after {
+    background: #6dfb70;
+  }
+  .panels .panel:nth-child(71) {
+    -webkit-animation: wing 5000ms 7000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 7000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -770%;
+  }
+  .panels .panel:nth-child(71)::after {
+    background: #bbe3d6;
+  }
+  .panels .panel:nth-child(72) {
+    -webkit-animation: wing 5000ms 7100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 7100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -781%;
+  }
+  .panels .panel:nth-child(72)::after {
+    background: #77c29c;
+  }
+  .panels .panel:nth-child(73) {
+    -webkit-animation: wing 5000ms 7200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 7200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -792%;
+  }
+  .panels .panel:nth-child(73)::after {
+    background: #7ef995;
+  }
+  .panels .panel:nth-child(74) {
+    -webkit-animation: wing 5000ms 7300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 7300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -803%;
+  }
+  .panels .panel:nth-child(74)::after {
+    background: #a26bf0;
+  }
+  .panels .panel:nth-child(75) {
+    -webkit-animation: wing 5000ms 7400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 7400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -814%;
+  }
+  .panels .panel:nth-child(75)::after {
+    background: #b0b180;
+  }
+  .panels .panel:nth-child(76) {
+    -webkit-animation: wing 5000ms 7500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 7500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -825%;
+  }
+  .panels .panel:nth-child(76)::after {
+    background: #ecc3fd;
+  }
+  .panels .panel:nth-child(77) {
+    -webkit-animation: wing 5000ms 7600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 7600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -836%;
+  }
+  .panels .panel:nth-child(77)::after {
+    background: #9166f0;
+  }
+  .panels .panel:nth-child(78) {
+    -webkit-animation: wing 5000ms 7700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 7700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -847%;
+  }
+  .panels .panel:nth-child(78)::after {
+    background: #a49783;
+  }
+  .panels .panel:nth-child(79) {
+    -webkit-animation: wing 5000ms 7800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 7800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -858%;
+  }
+  .panels .panel:nth-child(79)::after {
+    background: #c9d874;
+  }
+  .panels .panel:nth-child(80) {
+    -webkit-animation: wing 5000ms 7900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 7900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -869%;
+  }
+  .panels .panel:nth-child(80)::after {
+    background: #e06d8a;
+  }
+  .panels .panel:nth-child(81) {
+    -webkit-animation: wing 5000ms 8000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 8000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -880%;
+  }
+  .panels .panel:nth-child(81)::after {
+    background: #6eeceb;
+  }
+  .panels .panel:nth-child(82) {
+    -webkit-animation: wing 5000ms 8100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 8100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -891%;
+  }
+  .panels .panel:nth-child(82)::after {
+    background: #6b836c;
+  }
+  .panels .panel:nth-child(83) {
+    -webkit-animation: wing 5000ms 8200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 8200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -902%;
+  }
+  .panels .panel:nth-child(83)::after {
+    background: #6fe7cf;
+  }
+  .panels .panel:nth-child(84) {
+    -webkit-animation: wing 5000ms 8300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 8300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -913%;
+  }
+  .panels .panel:nth-child(84)::after {
+    background: #fbcbc7;
+  }
+  .panels .panel:nth-child(85) {
+    -webkit-animation: wing 5000ms 8400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 8400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -924%;
+  }
+  .panels .panel:nth-child(85)::after {
+    background: #c3a4ca;
+  }
+  .panels .panel:nth-child(86) {
+    -webkit-animation: wing 5000ms 8500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 8500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -935%;
+  }
+  .panels .panel:nth-child(86)::after {
+    background: #f66a85;
+  }
+  .panels .panel:nth-child(87) {
+    -webkit-animation: wing 5000ms 8600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 8600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -946%;
+  }
+  .panels .panel:nth-child(87)::after {
+    background: #8170a9;
+  }
+  .panels .panel:nth-child(88) {
+    -webkit-animation: wing 5000ms 8700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 8700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -957%;
+  }
+  .panels .panel:nth-child(88)::after {
+    background: #f665f3;
+  }
+  .panels .panel:nth-child(89) {
+    -webkit-animation: wing 5000ms 8800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 8800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -968%;
+  }
+  .panels .panel:nth-child(89)::after {
+    background: #edc28c;
+  }
+  .panels .panel:nth-child(90) {
+    -webkit-animation: wing 5000ms 8900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 8900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -979%;
+  }
+  .panels .panel:nth-child(90)::after {
+    background: #7c9097;
+  }
+  .panels .panel:nth-child(91) {
+    -webkit-animation: wing 5000ms 9000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 9000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -990%;
+  }
+  .panels .panel:nth-child(91)::after {
+    background: #b5917d;
+  }
+  .panels .panel:nth-child(92) {
+    -webkit-animation: wing 5000ms 9100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 9100ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -1001%;
+  }
+  .panels .panel:nth-child(92)::after {
+    background: #7dfebb;
+  }
+  .panels .panel:nth-child(93) {
+    -webkit-animation: wing 5000ms 9200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 9200ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -1012%;
+  }
+  .panels .panel:nth-child(93)::after {
+    background: #99dc7b;
+  }
+  .panels .panel:nth-child(94) {
+    -webkit-animation: wing 5000ms 9300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 9300ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -1023%;
+  }
+  .panels .panel:nth-child(94)::after {
+    background: #dac5bb;
+  }
+  .panels .panel:nth-child(95) {
+    -webkit-animation: wing 5000ms 9400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 9400ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -1034%;
+  }
+  .panels .panel:nth-child(95)::after {
+    background: #f77eac;
+  }
+  .panels .panel:nth-child(96) {
+    -webkit-animation: wing 5000ms 9500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 9500ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -1045%;
+  }
+  .panels .panel:nth-child(96)::after {
+    background: #dce5be;
+  }
+  .panels .panel:nth-child(97) {
+    -webkit-animation: wing 5000ms 9600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 9600ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -1056%;
+  }
+  .panels .panel:nth-child(97)::after {
+    background: #a3a5a8;
+  }
+  .panels .panel:nth-child(98) {
+    -webkit-animation: wing 5000ms 9700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 9700ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -1067%;
+  }
+  .panels .panel:nth-child(98)::after {
+    background: #dd7ee5;
+  }
+  .panels .panel:nth-child(99) {
+    -webkit-animation: wing 5000ms 9800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 9800ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -1078%;
+  }
+  .panels .panel:nth-child(99)::after {
+    background: #708183;
+  }
+  .panels .panel:nth-child(100) {
+    -webkit-animation: wing 5000ms 9900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 9900ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -1089%;
+  }
+  .panels .panel:nth-child(100)::after {
+    background: #76aaec;
+  }
+  .panels .panel:nth-child(101) {
+    -webkit-animation: wing 5000ms 10000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+            animation: wing 5000ms 10000ms cubic-bezier(0.545, 0.08, 0.52, 0.975) infinite;
+    transform-origin: 0% -1100%;
+  }
+  .panels .panel:nth-child(101)::after {
+    background: #e1c0e8;
+  }
+  
+  @-webkit-keyframes panelsRotate {
+    0% {
+      transform: rotateX(70deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(70deg) rotateZ(360deg);
+    }
+  }
+  
+  @keyframes panelsRotate {
+    0% {
+      transform: rotateX(70deg) rotateZ(0deg);
+    }
+    100% {
+      transform: rotateX(70deg) rotateZ(360deg);
+    }
+  }
+  @-webkit-keyframes wing {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+      transform: rotateX(-360deg) rotateY(180deg);
+    }
+    65% {
+      transform: rotateX(-360deg) rotateY(360deg);
+    }
+    100% {
+      transform: rotateX(-360deg) rotateY(360deg);
+    }
+  }
+  @keyframes wing {
+    0% {
+      transform: rotateX(0deg) rotateY(0deg);
+    }
+    50% {
+      transform: rotateX(-360deg) rotateY(180deg);
+    }
+    65% {
+      transform: rotateX(-360deg) rotateY(360deg);
+    }
+    100% {
+      transform: rotateX(-360deg) rotateY(360deg);
+    }
+  }

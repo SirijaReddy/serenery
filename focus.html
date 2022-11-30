@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- font awesome -->
+  <script src="https://kit.fontawesome.com/52590b27fa.js" crossorigin="anonymous"></script>
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+    <title>Focus</title>
+</head>
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center header-transparent">
+    <div class="container-fluid">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-xl-12 d-flex align-items-center justify-content-between">
+          <!-- <h1 class="logo"><a href="index.html">BizPage</a></h1> -->
+          <!-- Uncomment below if you prefer to use an image logo -->
+          <a href="/home" class="logo"><img src="img/logo.png" alt="" class="img-fluid" width="250" height="100"></a>
+          <nav id="navbar" class="navbar">
+            <ul>
+              <li><a class="nav-link" href="/home">Home</a></li>
+              <li><a class="nav-link" href="/test">Test</a></li>
+              <li><a class="nav-link" href="/appointment">Appointment</a></li>
+              <li><a class="nav-link" href="/meditation">Meditation</a></li>
+              <li><a class="nav-link active" href="/focus">Focus</a></li>
+              <li><a class="nav-link" href="/destress">de-stress</a></li>
+              <!-- <li><a class="nav-link active" href="login.html">Login</a></li> -->
+              <!-- <li><div class="nav-link active" href="login.html" class="buttons"><button class="butn-hover color">Login</button></div></li> -->
+              <!-- <li><a class="nav-link fontse" href="/logout"><button class="butn-hover color">LOGOUT</button></a></li> -->
+            </ul>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
+          </nav><!-- .navbar -->
+        </div>
+      </div>
+    </div>
+  </header><!-- End Header -->
+        <audio id = RainAudio loop>
+            <source src ="Rain.wav">
+        </audio>
+        <audio id = BirdsAudio loop>
+            <source src ="birds.mp3">
+        </audio>
+        <audio id = LeavesAudio loop>
+            <source src ="Leaves.mp3">
+        </audio>
+        <audio id = TempleBellAudio loop>
+            <source src ="templeBell.mp3">
+        </audio>
+        <audio id = SingingBowlAudio loop>
+            <source src ="singingbell.mp3">
+        </audio>
+        <audio id = WaterfallAudio loop>
+            <source src ="waterfall.mp3">
+        </audio>
+        <audio id = SantoorAudio loop>
+            <source src ="santoor.mp3">
+        </audio>
+        <audio id = WavesAudio loop>
+            <source src ="waves.mp3">
+        </audio>
+        <script>
+
+            var flagr=0;
+            function Rain()
+            {
+                var x = document.getElementById("RainAudio");
+                if(flagr===0)
+                {
+                    //document.body.style.background = "lightblue";
+                    x.play();
+                    flagr=1;
+                }
+                else
+                {
+                    x.pause();
+                    flagr=0;
+                }
+            }
+             
+            var flagr=0;
+            function Birds()
+            {
+                var x = document.getElementById("BirdsAudio");
+                if(flagr===0)
+                {
+                    //document.body.style.background = "lightblue";
+                    x.play();
+                    flagr=1;
+                }
+                else
+                {
+                    x.pause();
+                    flagr=0;
+                }
+            }
+            var flagr=0;
+            function Leaves()
+            {
+                var x = document.getElementById("LeavesAudio");
+                if(flagr===0)
+                {
+                    //document.body.style.background = "lightblue";
+                    x.play();
+                    flagr=1;
+                }
+                else
+                {
+                    x.pause();
+                    flagr=0;
+                }
+            }
+            var flagr=0;
+            function TempleBell()
+            {
+                var x = document.getElementById("TempleBellAudio");
+                if(flagr===0)
+                {
+                    //document.body.style.background = "lightblue";
+                    x.play();
+                    flagr=1;
+                }
+                else
+                {
+                    x.pause();
+                    flagr=0;
+                }
+            }
+            function SingingBowl()
+            {
+                var x = document.getElementById("SingingBowlAudio");
+                if(flagr===0)
+                {
+                    //document.body.style.background = "lightblue";
+                    x.play();
+                    flagr=1;
+                }
+                else
+                {
+                    x.pause();
+                    flagr=0;
+                }
+            }    
+            function Waterfall()
+            {
+                var x = document.getElementById("WaterfallAudio");
+                if(flagr===0)
+                {
+                    //document.body.style.background = "lightblue";
+                    x.play();
+                    flagr=1;
+                }
+                else
+                {
+                    x.pause();
+                    flagr=0;
+                }
+            }
+            function Santoor()
+            {
+                var x = document.getElementById("SantoorAudio");
+                if(flagr===0)
+                {
+                    //document.body.style.background = "lightblue";
+                    x.play();
+                    flagr=1;
+                }
+                else
+                {
+                    x.pause();
+                    flagr=0;
+                }
+            }
+            function Waves()
+            {
+                var x = document.getElementById("WavesAudio");
+                if(flagr===0)
+                {
+                    //document.body.style.background = "lightblue";
+                    x.play();
+                    flagr=1;
+                }
+                else
+                {
+                    x.pause();
+                    flagr=0;
+                }
+            }
+        </script>
+        <link href="css/style.css" rel="stylesheet">
+        <input id="buttonRain" type="image" src="https://media.istockphoto.com/id/1257951336/photo/transparent-umbrella-under-rain-against-water-drops-splash-background-rainy-weather-concept.jpg?s=612x612&w=0&k=20&c=lNvbIw1wReb-owe7_rMgW8lZz1zElqs5BOY1AZhyRXs=" onclick="Rain()">
+        <input id="buttonBirds" type="image" src="https://images.theconversation.com/files/482351/original/file-20220901-15-dnl1i1.jpg?ixlib=rb-1.1.0&rect=46%2C0%2C5184%2C3437&q=20&auto=format&w=320&fit=clip&dpr=2&usm=12&cs=strip" onclick="Birds()" />
+        <input id="buttonLeaves" type="image" src="https://storage.googleapis.com/kaggle-competitions/kaggle/5408/media/bigleaves.jpg" onclick="Leaves()"/>
+        <input id="buttonTempleBell" type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRgc2zqJeyNR-2hJjap4TTkt1fTuapabvrePg&usqp=CAU" onclick="TempleBell()"/>
+        <input id="buttonSingingBowl" type="image" src="https://image.shutterstock.com/image-photo/tibetan-singing-bowl-sanskrit-engraving-260nw-1524459323.jpg"onclick="SingingBowl()" />
+        <p style="font-size:large">&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Rain&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&emsp;&ensp;Birds&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Leaves&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;Temple Bells&ensp;&emsp;&emsp;&emsp;&emsp;&ensp;Singing Bowl</p>
+        <input id="buttonWaterfall" type="image" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTcfsxmulUgaHFqQi7CA7uLxetN_CRN0W_ffg&usqp=CAU"onclick="Waterfall()" />
+        <input id="buttonSantoor" type="image" src="https://images.dinamani.com/uploads/user/imagelibrary/2017/12/27/original/santoor.jpg"onclick="Santoor()" />
+        <input id="buttonWaves" type="image" src="https://images.unsplash.com/photo-1498330177096-689e3fb901ca?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8d2F2ZXN8ZW58MHx8MHx8&w=1000&q=80"onclick="Waves()" />
+        <p style="font-size:large">&ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Waterfall&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;&ensp;Santoor&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;Waves</p>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>BizPage Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="img/favicon.png" rel="icon">
+  <link href="img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,700,700i|Montserrat:300,400,500,700" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="vendor/aos/aos.css" rel="stylesheet">
+  <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+    <title>sign up</title>
+</head>
+<body>
+    
+    <div id="signup" >
+        <div class="container">
+            <div id="login-row" class="row justify-content-center align-items-center">
+                <div id="login-column" class="col-md-6">
+                    <div id="login-box" class="col-md-12">
+                        <form id="login-form" class="form" action="" method="post">
+                            <h1 class="text-center head" style="color:goldenrod" >Sign-Up</h1>
+                            <div class="form-group">
+                                <label for="name" class="padd">Name:</label><br>
+                                <input type="text" name="name" id="name" class="form-control" placeholder="Name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="padd">E-Mail Id:</label><br>
+                                <input type="email" name="email" id="email" class="form-control" placeholder="Email id" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="password" class="padd">Password:</label><br>
+                                <input type="password" name="password" id="password" class="form-control" placeholder="Password" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="cpassword" class="padd">Confirm Password:</label><br>
+                                <input type="password" name="cpassword" id="cpassword" class="form-control" placeholder="Confirm Password" required>
+                            </div>
+                            <div class="form-group d-grid gap-2">
+                               <button name="submit" class="btn btn-md" type="submit">Submit</button> 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var password = document.getElementById("password")
+                        , cpassword = document.getElementById("cpassword");
+    function validatePassword(){
+        if(password.value != cpassword.value) {
+            cpassword.setCustomValidity("Passwords Don't Match");
+        } 
+        else {
+            cpassword.setCustomValidity('');
+        }
+    }
+    password.onchange = validatePassword;
+    cpassword.onkeyup = validatePassword;
+</script>
+</body>
+</html>

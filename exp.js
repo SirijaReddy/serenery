@@ -2,7 +2,6 @@ const express=require("express");
 var path = require('path');
 const bodyParser = require("body-parser");
 const mongoose = require("mongoose");
-const _ = require("lodash");
 const cors = require("cors");
 const alert = require("alert");
 
@@ -23,15 +22,19 @@ const userSchema = new mongoose.Schema({
     password: String
 })
 
+const appointmentSchema = new mongoose.Schema({
+    date: String,
+    time: String,
+    therapist: String
+})
+
+// const Appointment= new mongoose.model("Appointment", appointmentSchema)
+
 const User = new mongoose.model("User", userSchema)
 
 app.get("/",function(req,res){
         res.sendFile(__dirname+"/login.html");   
 }); 
-
-// app.get("/",function(req,res){
-//     res.sendFile(__dirname+"/logout");
-// });
 
 app.get("/signup",function(req,res){
     res.sendFile(__dirname+"/signup.html");
@@ -61,7 +64,6 @@ app.get("/appointment",function(req,res){
     res.sendFile(__dirname+"/appointment.html");
 });
 
-
 app.post("/", (req, res)=> {
     const { email, password} = req.body
     User.findOne({ email: email}, (err, user) => {
@@ -69,22 +71,18 @@ app.post("/", (req, res)=> {
             if(password === user.password ) {
                 res.sendFile(__dirname+"/index.html"); 
             } else {
-                //res.send({ message: "Password didn't match"})
                 alert("Password didn't match");
             }
         } else {
-            //res.send({message: "User not registered"})
             alert("User not registered");
         }
     })
 }) 
 
-
 app.post("/signup", (req, res)=> {
     const { name, email, password} = req.body
     User.findOne({email: email}, (err, user) => {
         if(user){
-            //res.send({message: "User already registerd"})
             alert("User already registered");
         } else {
             const user = new User({
@@ -96,8 +94,6 @@ app.post("/signup", (req, res)=> {
                 if(err) {
                     res.send(err)
                 } else {
-                    //res.send( { message: "Successfully Registered, Please login now." })
-                    //msg="Successfully Registered, Please login now.";
                     alert("Successfully Registered, Please login now.");
                 }
             })

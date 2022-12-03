@@ -4,7 +4,6 @@
     <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Serenery</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -26,13 +25,7 @@
   <link href="vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
-    <title>Test</title>
-  <!-- =======================================================
-  * Template Name: BizPage - v5.10.1
-  * Template URL: https://bootstrapmade.com/bizpage-bootstrap-business-template/
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <title>Focus</title>
 </head>
 <body>
   <!-- ======= Header ======= -->
@@ -40,15 +33,20 @@
     <div class="container-fluid">
       <div class="row justify-content-center align-items-center">
         <div class="col-xl-12 d-flex align-items-center justify-content-between">
+          <!-- <h1 class="logo"><a href="index.html">BizPage</a></h1> -->
+          <!-- Uncomment below if you prefer to use an image logo -->
           <a href="/home" class="logo"><img src="img/logo.png" alt="" class="img-fluid" width="250" height="100"></a>
           <nav id="navbar" class="navbar">
             <ul>
-              <li><a class="nav-link scrollbar active" href="#hero">Home</a></li>
-              <li><a class="nav-link" href="/test">Test</a></li>
+              <li><a class="nav-link" href="/home">Home</a></li>
+              <li><a class="nav-link  active" href="/test">Test</a></li>
               <li><a class="nav-link" href="/appointment">Appointment</a></li>
               <li><a class="nav-link" href="/meditation">Meditation</a></li>
               <li><a class="nav-link" href="/focus">Focus</a></li>
               <li><a class="nav-link" href="/destress">de-stress</a></li>
+              <!-- <li><a class="nav-link active" href="login.html">Login</a></li> -->
+              <!-- <li><div class="nav-link active" href="login.html" class="buttons"><button class="butn-hover color">Login</button></div></li> -->
+              <!-- <li><a class="nav-link fontse" href="/logout"><button class="butn-hover color">LOGOUT</button></a></li> -->
             </ul>
             <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
           </nav><!-- .navbar -->
@@ -56,55 +54,109 @@
       </div>
     </div>
   </header><!-- End Header -->
-  
-    <div class="quiz">
-      <div class="row">
-        <div class="col-8"></div>
-        <div class="col-2">&nbsp; Yes</div>
-        <div class="col-2"> No</div>
-      </div>
-      <div class="row">
-        <div class="context col-8">1. Little interest or pleasure in doing things</div>
-        <div class="col-2" ><input type="radio" name="1" ></div>
-        <input type="radio" name="1" >
-        <hr>
-        <div class="context col-8">2. Feeling down, depressed, or hopeless</div>
-        <div class="col-2" ><input type="radio" name="2" ></div>
-        <input type="radio" name="2" >
-        <hr>
-        <div class="context col-8">3. Trouble falling or staying asleep, or sleeping too much</div>
-        <div class="col-2" ><input type="radio" name="3" ></div>
-        <input type="radio" name="3" >
-        <hr>
-         <div class="context col-8">4. Feeling tired or having little energy</div>
-        <div class="col-2" ><input type="radio" name="4" ></div>
-        <input type="radio" name="4" >
-        <hr>
-        <div class="context col-8">5. Poor appetite or overeating </div>
-        <div class="col-2" ><input type="radio" name="5" ></div>
-        <input type="radio" name="5" >
-        <hr>
-        <div class="context col-8">6. Feeling bad about yourself - or that you are a failure or have let yourself or your family down</div>
-        <div class="col-2" ><input type="radio" name="6" ></div>
-        <input type="radio" name="6" >
-        <hr>
-        <div class="context col-8">7. Trouble concentrating on things, such as reading the newspaper or watching televisions</div>
-        <div class="col-2" ><input type="radio" name="7" ></div>
-        <input type="radio" name="7" >
-        <hr>
-        <div class="context col-8">8. Moving or speaking so slowly that other people could have noticed
-          Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual</div>
-        <div class="col-2" ><input type="radio" name="8" ></div>
-        <input type="radio" name="8" >
-        <hr>
-         <div class="context col-8">9. Thoughts that you would be better off dead, or of hurting yourself</div>
-        <div class="col-2" ><input type="radio" name="9" ></div>
-        <input type="radio" name="9" >
-        <hr>
-        <div class="context col-8">10. If you checked off any problems, have these problems made it difficult for you at work, home, or with other people?</div>
-        <div class="col-2" ><input type="radio" name="10" ></div>
-        <input type="radio" name="10" >
-      </div>
-    </div>
-</body>
+
+<div class ="question">
+       <p class="questions" id="question1" style="padding-top: 7%;">
+        1. Little interest or pleasure in doing things &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+    <input type="radio" name="answer1" value="correct"id = "quizButton">Yes &ensp;
+    <input type="radio" name="answer1" value="wrong" id = "quizButton">No </p>
+    <hr>
+
+    <p class="questions" id="question2">
+        2. Feeling down, depressed, or hopeless &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <input type="radio" name="answer2" value="correct" id = "quizButton">Yes &ensp;
+    <input type="radio" name="answer2" value="wrong" id = "quizButton">No </p>
+    <hr>
+
+    <p class="questions" id="question3">
+        3. Trouble falling or staying asleep, or sleeping too much &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+    <input type="radio" name="answer3" value="correct" id = "quizButton">Yes &ensp;
+    <input type="radio" name="answer3" value="wrong" id = "quizButton">No </p>
+    <hr>
+
+    <p class="questions" id="question4">
+        4. Feeling tired or having little energy &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+    <input type="radio" name="answer4" value="correct" id = "quizButton">Yes &ensp;
+    <input type="radio" name="answer4" value="wrong" id = "quizButton">No </p>
+    <hr>
+
+    <p class="questions" id="question5">
+        5. Poor appetite or overeating &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <input type="radio" name="answer5" value="correct" id = "quizButton">Yes &ensp;
+    <input type="radio" name="answer5" value="wrong" id = "quizButton">No </p>
+    <hr> 
+
+    <p class="questions" id="question6">
+        6. Feeling bad about yourself - or that you are a failure or have let yourself or your family down &emsp;
+    <input type="radio" name="answer6" value="correct" id = "quizButton">Yes &ensp;
+    <input type="radio" name="answer6" value="wrong" id = "quizButton">No </p>
+    <hr>
+
+    <p class="questions" id="question7">
+        7. Trouble concentrating on things, such as reading the newspaper or watching televisions &emsp;&emsp;&emsp;
+    <input type="radio" name="answer7" value="correct" id = "quizButton">Yes &ensp;
+    <input type="radio" name="answer7" value="wrong" id = "quizButton">No</p>
+    <hr>
+
+    <p class="questions" id="question8">
+        8. Moving or speaking so slowly that other people could have noticed
+              Or the opposite - being so fidgety or restless that you have been moving around a lot more than usual &ensp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <input type="radio" name="answer8" value="correct" id = "quizButton">Yes &ensp;
+    <input type="radio" name="answer8" value="wrong" id = "quizButton">No</p>
+    <hr>
+
+    <p class="questions" id="question9">
+        9. Thoughts that you would be better off dead, or of hurting yourself &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+    <input type="radio" name="answer9" value="correct" id = "quizButton">Yes &ensp;
+    <input type="radio" name="answer9" value="wrong" id = "quizButton">No</p>
+    <hr>
+
+    <p class="questions" id="question10">
+        10. If you checked off any problems, have these problems made it difficult for you at work, home, or with other people? &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&nbsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
+    <input type="radio" name="answer10" value="correct" id = "quizButton">Yes &ensp;
+    <input type="radio" name="answer10" value="wrong" id = "quizButton">No</p>
+    <hr>
+</div>
+</div>
+ 
+<div class ="centreButton">
+    <button class="quizSsubmit" onclick="return getResults();" type="submit" style="font-size: large;">Get Results</button>
+</div>
+
+  <h2 id="results-h"></h2>
+  <p id="results"></p>
+
+  <script>
+    function getResults() {
+
+//CORRECT ANSWERS
+var amountCorrect = 0;
+
+// LOOP FOR GOING THROUGH ALL QUESTIONS
+for(var i = 1; i <= 10; i++) {
+  var radiosName = document.getElementsByName('answer'+i);
+
+//LOOP FOR CHECKING ANSWERS INSIDE EACH RADIO
+  for(var j = 0; j < radiosName.length; j++) {
+    var radiosValue = radiosName[j];
+    if(radiosValue.value == "correct" && radiosValue.checked) {
+      amountCorrect++;
+      radiosValue.style.color = "green";
+    }
+  }
+}
+if(amountCorrect > 5)
+{
+    location.href = "/result"
+}
+else
+{
+    location.href = "/home"
+}
+
+}
+
+  </script>
+  </section>
+  </body>
 </html>

@@ -8,7 +8,7 @@ const alert = require("alert");
 const app=express();
 app.use(express.json())
 app.use(express.urlencoded())
-app.use(cors())
+//app.use(cors())
 
 app.use(express.static(path.join(__dirname, 'assets')));
 
@@ -21,14 +21,6 @@ const userSchema = new mongoose.Schema({
     email: String,
     password: String
 })
-
-const appointmentSchema = new mongoose.Schema({
-    date: String,
-    time: String,
-    therapist: String
-})
-
-// const Appointment= new mongoose.model("Appointment", appointmentSchema)
 
 const User = new mongoose.model("User", userSchema)
 
@@ -60,6 +52,10 @@ app.get("/test",function(req,res){
     res.sendFile(__dirname+"/quiz.html");
 });
 
+app.get("/result",function(req,res){
+    res.sendFile(__dirname+"/redirected.html");
+});
+
 app.get("/appointment",function(req,res){
     res.sendFile(__dirname+"/appointment.html");
 });
@@ -71,7 +67,7 @@ app.post("/", (req, res)=> {
             if(password === user.password ) {
                 res.sendFile(__dirname+"/index.html"); 
             } else {
-                alert("Password didn't match");
+                alert("Password incorrect");
             }
         } else {
             alert("User not registered");

@@ -1,7 +1,7 @@
 # Serenery - A Mental Health Website
 
 ## Overview
-Serenery is a mental health website designed to provide a calming and engaging experience through the use of CSS animations. The website leverages MongoDB as its database to store user information securely. Serenity offers a range of features, including booking appointments, guided meditation sessions with soothing animations, and stress-relief animations to help users unwind and relax.
+Serenery is a mental health website designed to provide a calming and engaging experience through the use of CSS animations. The website leverages MongoDB as its database to store user information securely. Serenery offers a range of features, including booking appointments, guided meditation sessions with soothing animations, and stress-relief animations to help users unwind and relax.
 
 ## Features
 ### Book Appointments:
